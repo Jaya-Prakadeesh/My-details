@@ -1,13 +1,40 @@
 <!DOCTYPE html>
-<html lang="en>
-  <head>
-    <title> My Details </title>
-  </head>
-  <body>
-    <h2> My name is P.G.Jayaprakadeesh </h2>
-    <h2> I'm a Engineering Graduate </h2>
-  </body>
-</html>  
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookSky</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Book</h1>
+    </div>
+    <div class="container">
+        <div class="book-container">
+            <h2>BOOK 1</h2>
+            <h5>XYZ</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut ad praesentium eligendi voluptatem enim et velit, tenetur iure totam nemo sit ex, beatae tempore fuga? Et facilis in similique perspiciatis.</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="book-title-input">
+            <input type="text" placeholder="Book Author" id="book-author-input">
+            <textarea placeholder="Short Description" id="book-description-input"></textarea>
+            <button id="add-book">ADD</button>
+            <button id="cancel-popup">CANCEL</button>
+        </form>
+    </div>
+
+
+    <button class="add-button" id="add=popup-button">+</button>
+    <script src="script.js"></script>
+</body>
+</html>
   
   
         
